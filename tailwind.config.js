@@ -11,7 +11,7 @@ export default {
     },
     extend: {
       maxWidth: {
-        app: '80rem',
+        app: '70rem',
       },
       fontFamily: {
         secondary: ['"Baloo 2", sans-serif'],

@@ -1,3 +1,96 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .title-xl {
+        font-size: 3rem;
+        line-height: 130%;
+        font-weight: theme('fontWeight.extrabold');
+        font-family: theme('fontFamily.secondary');
+    }
+
+    .title-l {
+        font-size: 2rem;
+        line-height: 130%;
+        font-weight: theme('fontWeight.extrabold');
+        font-family: theme('fontFamily.secondary');
+    }
+
+    .title-m {
+        font-size: 1.5rem;
+        line-height: 130%;
+        font-weight: theme('fontWeight.extrabold');
+        font-family: theme('fontFamily.secondary');
+    }
+
+    .title-s {
+        font-size: 1.25rem;
+        line-height: 130%;
+        font-weight: theme('fontWeight.bold');
+        font-family: theme('fontFamily.secondary');
+    }
+     
+    .title-xs {
+        font-size: 1,125rem;
+        line-height: 130%;
+        font-weight: theme('fontWeight.bold');
+        font-family: theme('fontFamily.secondary');
+    }
+
+    .title-xs {
+        font-size: 1,125rem;
+        line-height: 130%;
+        font-weight: theme('fontWeight.bold');
+        font-family: theme('fontFamily.secondary');
+    }
+
+    .custom-text-l {
+        font-size: 1.25rem;
+        line-height: 130%;
+        font-weight: theme('fontWeight.normal');
+        font-family: theme('fontFamily.sans');
+    }
+
+    .custom-text-m {
+        font-size: 1rem;
+        line-height: 130%;
+        font-weight: theme('fontWeight.normal');
+        font-family: theme('fontFamily.sans');
+    }
+
+    .custom-text-s {
+        font-size: 0.875rem;
+        line-height: 130%;
+        font-weight: theme('fontWeight.normal');
+        font-family: theme('fontFamily.sans');
+    }
+
+    .custom-text-xs {
+        font-size: 0.75rem;
+        line-height: 130%;
+        font-weight: theme('fontWeight.bold');
+        font-family: theme('fontFamily.sans');
+    }
+
+    .tag {
+        font-size: 0.625rem;
+        line-height: 130%;
+        font-weight: theme('fontWeight.bold');
+        font-family: theme('fontFamily.sans');
+    }
+
+    .button-g {
+        font-size: 0.875rem;
+        line-height: 160%;
+        font-weight: theme('fontWeight.bold');
+        font-family: theme('fontFamily.sans');
+    }
+
+    .button-m {
+        font-size: 0.75rem;
+        line-height: 160%;
+        font-weight: theme('fontWeight.normal');
+        font-family: theme('fontFamily.sans');
+    }
+}

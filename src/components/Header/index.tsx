@@ -10,7 +10,9 @@ export function Header() {
         <aside className="flex gap-3">
           <div className="flex gap-1 items-center justify-center p-2 bg-purple-light rounded-md">
             <MapPin size={22} weight="fill" className="fill-purple" />
-            <span className="text-xs text-purple-dark">Porto Alegre, RS</span>
+            <span className="custom-text-s text-purple-dark">
+              Porto Alegre, RS
+            </span>
           </div>
           <button className="p-2 bg-yellow-light rounded-md relative">
             <ShoppingCart

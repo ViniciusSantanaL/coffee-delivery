@@ -4,11 +4,18 @@ import { Checkout } from './pages/Checkout'
 import { Home } from './pages/Home'
 
 import './index.css'
+import { Header } from './components/Header'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home />,
+    element: <Header />,
+    children: [
+      {
+        path: '/',
+        element: <Home />,
+      },
+    ],
   },
   {
     path: '/checkout',
