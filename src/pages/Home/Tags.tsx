@@ -1,4 +1,4 @@
-import { ShoppingCart } from '@phosphor-icons/react'
+import { Coffee, Package, ShoppingCart, Timer } from '@phosphor-icons/react'
 
 export function Tags() {
   return (
@@ -6,29 +6,29 @@ export function Tags() {
       <div className="flex gap-3 items-center">
         <ShoppingCart
           size={32}
-          className="bg-purple fill-background rounded-full p-2"
+          className="bg-yellow-dark fill-background rounded-full p-2"
           weight="fill"
         />
         <span className="text-base-text">Compra simples e segura</span>
       </div>
       <div className="flex gap-3 items-center">
-        <ShoppingCart
+        <Package
           size={32}
-          className="bg-purple fill-background rounded-full p-2"
+          className="bg-base-text fill-background rounded-full p-2"
           weight="fill"
         />
-        <span className="text-base-text">Compra simples e segura</span>
+        <span className="text-base-text">Entrega rápida e rastreada</span>
       </div>
       <div className="flex gap-3 items-center">
-        <ShoppingCart
+        <Timer
           size={32}
-          className="bg-purple fill-background rounded-full p-2"
+          className="bg-yellow fill-background rounded-full p-2"
           weight="fill"
         />
         <span className="text-base-text">Compra simples e segura</span>
       </div>
       <div className="flex gap-3 items-center">
-        <ShoppingCart
+        <Coffee
           size={32}
           className="bg-purple fill-background rounded-full p-2"
           weight="fill"

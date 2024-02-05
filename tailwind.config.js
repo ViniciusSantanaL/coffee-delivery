@@ -10,6 +10,14 @@ export default {
       sans: ['"Roboto", sans-serif'],
     },
     extend: {
+      gridTemplateAreas: {
+        form: [
+          'cep . .',
+          'rua rua rua',
+          'numero complemento complemento',
+          'bairro cidade uf',
+        ],
+      },
       maxWidth: {
         app: '70rem',
       },
@@ -40,5 +48,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require('@savvywombat/tailwindcss-grid-areas')],
 }

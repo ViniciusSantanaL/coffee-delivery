@@ -2,7 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    body {
+        @apply px-4;
+    }
+}
+
 @layer components {
+    .border-rgb {
+        border-radius: 6px 36px;
+        width: 100%;
+        background-origin: border-box;
+        border: 1px solid transparent;
+        background: linear-gradient(to bottom right, #DBAC2C, #8047F8);
+    }
+
     .title-xl {
         font-size: 3rem;
         line-height: 130%;

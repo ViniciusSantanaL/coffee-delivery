@@ -4,26 +4,26 @@ import { Checkout } from './pages/Checkout'
 import { Home } from './pages/Home'
 
 import './index.css'
-import { Header } from './components/Header'
+import { Root } from './pages/Root'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Header />,
+    element: <Root />,
     children: [
       {
-        path: '/',
+        index: true,
         element: <Home />,
       },
+      {
+        path: '/checkout',
+        element: <Checkout />,
+      },
+      {
+        path: '/success',
+        element: <Success />,
+      },
     ],
-  },
-  {
-    path: '/checkout',
-    element: <Checkout />,
-  },
-  {
-    path: '/success',
-    element: <Success />,
   },
 ])
 

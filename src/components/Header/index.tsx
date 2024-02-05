@@ -3,7 +3,7 @@ import { MapPin, ShoppingCart } from '@phosphor-icons/react'
 
 export function Header() {
   return (
-    <header className="py-8 px-4">
+    <header className="py-8">
       <nav className="max-w-app flex items-center justify-between mx-auto">
         <img src={logo} alt="Logo" />
 
