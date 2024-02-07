@@ -3,8 +3,22 @@ import { Tags } from './Tags'
 import coffeeHome from '@/assets/coffe-home.svg'
 import background from '@/assets/background.svg'
 import { CoffeeList } from './CoffeeList'
+import { useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 
 export function Home() {
+  const location = useLocation()
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace('#', '')
+      const catalog = document.getElementById(id)
+      if (catalog) {
+        catalog.scrollIntoView({ behavior: 'smooth' })
+      }
+    }
+  }, [location])
+
   return (
     <main className="px-4 relative">
       <section className="mx-auto max-w-app flex flex-col items-center justify-between gap-14 py-16 lg:flex-row lg:justify-center">

@@ -5,6 +5,10 @@
 @layer base {
     body {
         @apply px-4;
+        @apply bg-background
+    }
+    main {
+        @apply pt-24
     }
 }
 
@@ -106,5 +110,13 @@
         line-height: 160%;
         font-weight: theme('fontWeight.normal');
         font-family: theme('fontFamily.sans');
+    }
+    .remove-arrow::-webkit-inner-spin-button,
+    .remove-arrow::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    .remove-arrow {
+        -moz-appearance: textfield;
     }
 }

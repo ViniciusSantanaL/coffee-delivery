@@ -1,4 +1,4 @@
-import { InputHTMLAttributes, PropsWithChildren } from 'react'
+import { InputHTMLAttributes, PropsWithChildren, forwardRef } from 'react'
 import { twMerge } from 'tailwind-merge'
 
 type SelectItemProps = Omit<
@@ -16,15 +16,14 @@ const selectStyle = twMerge(
   'peer-checked:bg-purple-light peer-checked:border-purple',
 )
 
-export function SelectItem({
-  value,
-  name,
-  children,
-  ...rest
-}: PropsWithChildren<SelectItemProps>) {
+export const SelectItem = forwardRef<
+  HTMLInputElement,
+  PropsWithChildren<SelectItemProps>
+>(function SelectItem({ value, name, children, ...rest }, ref) {
   return (
     <div className="w-full">
       <input
+        ref={ref}
         id={value}
         value={value}
         name={name}
@@ -37,4 +36,4 @@ export function SelectItem({
       </label>
     </div>
   )
-}
+})
